@@ -1,0 +1,13 @@
+# Amazon
+
+nslookup slash16.org 8.8.8.8 | grep Name -A1 | grep Address | awk '{print $2}' | head -n1 | xargs whois | grep OrgName
+
+#nslookup slash16.org => Interroge le serveur DNS du nom de domaine slash16.org
+# grep Name -A1 => Premet d'avoir toutes les lignes contenants Name et la ligne en dessous
+# grep Address => Permet d'avoir toutes les lignes contenants Address
+# awk '{print $2}' => Permet d'avoir le 2eme arguement
+# head -n1 => Permet d'avoir que la premiere ligne
+# xargs => xargs => Valeur de la derniere commande (Cad la valeur que renvois head -n1)
+# whois => Interroge l'adresse IP qio est dans xargs
+# grep OrgName => Recupere la ligne de l'herbegeur de xargs (Donc, de slash16.org)
+

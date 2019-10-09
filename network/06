@@ -1,0 +1,2 @@
+/etc/resolv.conf
+#cat /etc/resolv.conf pour voir l'adresse IP du serveur DNS que vous utilisez

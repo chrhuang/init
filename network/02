@@ -1,0 +1,2 @@
+ifconfig en0
+# ifconfig $nomDuReseau = Afficher $nomDuReseau

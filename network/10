@@ -1,0 +1,3 @@
+traceroute slash16.org
+
+# traceroute => Permet de suivre le chemin d'un paquet de notre machine (local) a l'adresse IP

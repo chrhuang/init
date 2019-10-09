@@ -1,0 +1,3 @@
+ifconfig -l
+#ifconfig -> Informations des interfaces reseaux IP
+# -l -> Man ifconfig -> Lister toutes les inferfaces du systeme sans information supplementaire
