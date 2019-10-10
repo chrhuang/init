@@ -1,0 +1,3 @@
+su root /etc/init.d/ssh restart
+
+#su root => Permet d'etre en root

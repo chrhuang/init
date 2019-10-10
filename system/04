@@ -1,0 +1,4 @@
+uptime -p
+
+# uptime => Permet d'avoir le temps ou le systeme a ete demarre la derniere fois
+# -p => --pretty => Pour mieux voir

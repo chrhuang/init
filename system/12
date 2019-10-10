@@ -1,0 +1,4 @@
+sudo du -sh /var/*
+
+# -s => Total de chaque argument
+# -h => Lisible par un humain

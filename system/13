@@ -1,0 +1,4 @@
+top -d 1
+
+# top => Affiche les processus Linux
+# -d 1 -> Permet d'avoir un delais d'actualisation d'une seconde 

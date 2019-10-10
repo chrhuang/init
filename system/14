@@ -1,0 +1,3 @@
+sudo tail -f /var/log/syslog &
+
+# & => Mettre & a la fin permet de mettre la commande en background

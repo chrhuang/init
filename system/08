@@ -1,0 +1,4 @@
+~/.ssh/authorized_keys
+
+# .ssh => Dossier cache
+# authorized_key => Clef du client (Cle publique ou mot de passe)

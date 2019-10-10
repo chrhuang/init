@@ -1,0 +1,5 @@
+jobs -p | xargs sudo kill
+
+# jobs => Permet de voir les processus en cours en background
+# -p => Retourne le PID de chaque processus
+# sudo kill => Permet d'arreter les processus

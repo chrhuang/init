@@ -1,0 +1,3 @@
+df -h
+# df => Affiche l'espace disponible et utilise
+# -h => Lisible par un humain

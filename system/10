@@ -1,0 +1,5 @@
+sudo fdisk -l
+
+# fdisk => voir les partitions
+# -l => Permet d'avoir la liste des partitions
+
