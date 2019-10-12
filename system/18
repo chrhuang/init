@@ -1,0 +1,2 @@
+sudo service ssh stop
+# Permet de stoper un serveur ssh

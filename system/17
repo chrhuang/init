@@ -1,0 +1,5 @@
+ssh <login>@<host_ip> [-p PORT]
+# Par exemple pour un utilisateur => chrhuang
+# Ayant une addresse ip => 172.16.254.1
+# -p Permet de choisir son port (Le port par default est le 22)
+# ssh chrhuang@172.16.254.1 -p 80
