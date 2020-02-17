@@ -1,0 +1,69 @@
+#!/bin/bash
+
+RED='\033[0;31m'
+B_RED='\033[1;31m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+B_GREEN='\033[1;32m'
+NC='\033[0m'
+
+echo -e "${CYAN}Hey !"
+while [ "$FLAG_PUSH" != "y" ] && [ "$FLAG_PUSH" != "n" ]; do
+	read -p "Tu veux push ton projet ? [y][n]    :" FLAG_PUSH
+done
+
+if [ $FLAG_PUSH == "n" ]
+then
+	echo -e "${RED}Bye !${NC}"
+	exit 0
+fi
+
+if [ -f auteur ]
+then
+	echo -e "${CYAN}Tu as bien ton fichier auteur ! ${NC}"
+else
+	echo -e "${RED}Fichier auteur peut etre ?${NC}"
+	exit 0
+fi
+
+input="auteur"
+while IFS= read -r line
+do
+  echo "   $line"
+done < "$input"
+echo -e "   $line${CYAN}"
+while [ "$FLAG_AUTEUR" != "y" ] && [ "$FLAG_AUTEUR" != "n" ]; do
+    read -p "Ce sont bien les bon noms dans le fichier auteur ? [y][n]    :" FLAG_AUTEUR
+done
+
+if [ $FLAG_AUTEUR == 'n' ]
+then
+	echo -e "${RED}Olalalala pas bien ! >:(${NC}"
+	exit 0
+fi
+
+echo -e "${CYAN}Lancement de la norminette ...${RED}"
+norminette | grep -B1 "Error"
+
+echo -e "${CYAN}"
+while [ "$FLAG_LEAKS" != "y" ] && [ "$FLAG_LEAKS" != "n" ]; do
+	read -p "Tu as bien verifie tes leaks ? [y][n]    :" FLAG_LEAKS
+done
+
+if [ $FLAG_LEAKS == 'n' ]
+then
+	echo -e "${RED}Pas bien !${NC}"
+	exit 0
+fi
+
+while [ "$FLAG_MHH" != "y" ] && [ "$FLAG_MHH" != "n" ]; do
+	read -p "Vraiment ??? [y][n]    :" FLAG_MHH
+done
+
+if [ $FLAG_MHH == 'n' ]
+then
+	echo -e "${RED}Pas bien >:(${NC}"
+	exit 0
+fi
+
+echo -e "${CYAN}OK ! Tu peux push ! :D${NC}"
