@@ -1,2 +1,2 @@
-Session Graphique =>
+Session Graphique => Le montrer sur la VM
 Session ssh => ssh login@hostname/host_ip [-p PORT]
